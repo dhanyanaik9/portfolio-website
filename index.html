@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dhanya — Portfolio</title>
+  <title>Dhanya Mohana Naik — Portfolio</title>
   <style>
     body {
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -11,13 +11,15 @@
       padding: 20px;
       background: #fdfdfd;
       color: #222;
+      line-height: 1.6;
     }
     header {
       text-align: center;
-      padding: 40px 0;
-      background: #f4f4f4;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #e3f2fd, #f1f8e9);
       border-radius: 10px;
       margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     h1 {
       margin-bottom: 5px;
@@ -25,6 +27,20 @@
     h2 {
       border-bottom: 2px solid #ddd;
       padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0077cc;
+      margin-bottom: 15px;
+    }
+    .tagline {
+      font-style: italic;
+      color: #444;
+      margin-top: 6px;
     }
     .projects {
       display: grid;
@@ -32,16 +48,31 @@
       gap: 18px;
       margin-top: 20px;
     }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .skill {
+      background: #e0f2ff;
+      color: #0073e6;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
     .card {
       border: 1px solid #e6e6e6;
       padding: 16px;
       border-radius: 10px;
       background: white;
       box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-      transition: transform 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
     .card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
     .card a {
       text-decoration: none;
@@ -50,30 +81,91 @@
     }
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 50px;
       color: #666;
       font-size: 0.9rem;
+      padding: 20px 0;
+    }
+    .resume-button {
+      display: inline-block;
+      background: #0077cc;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+    .resume-button:hover {
+      background: #005fa3;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Dhanya</h1>
-    <p>AI Developer | Creator of KAVYAGUARD | Student</p>
+    <img src="WhatsApp Image 2025-10-13 at 12.09.25 PM(1).jpeg" alt="Dhanya Mohana Naik" class="profile-pic">
+    <h1>Dhanya Mohana Naik</h1>
+    <p>Information Science & Engineering Student | AI & ML Enthusiast</p>
+    <p class="tagline">"Building intelligent systems that empower and protect communities."</p>
+    <a href="DHANYA_MOHANA_NAIK_RESUME.pdf" target="_blank" class="resume-button">📄 View Resume</a>
   </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I’m an aspiring AI developer passionate about using technology for social good. 
+      My major project, <strong>KAVYAGUARD</strong>, focuses on detecting hate speech in Kannada text 
+      using Natural Language Processing and Machine Learning. 
+      I aim to create ethical and impactful AI solutions that contribute to online safety.
+    </p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p>
+      <strong>Bachelor of Engineering (B.E.)</strong> — Information Science and Engineering<br>
+      A. J. Institute of Engineering and Technology, Mangaluru<br>
+      <em>CGPA: 8.2 (Till 3rd Year)</em>
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill">Python</span>
+      <span class="skill">C / C++</span>
+      <span class="skill">Java</span>
+      <span class="skill">Machine Learning</span>
+      <span class="skill">Deep Learning</span>
+      <span class="skill">Natural Language Processing</span>
+      <span class="skill">SQL</span>
+      <span class="skill">Data Analysis</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">GitHub</span>
+    </div>
+  </section>
 
   <section>
     <h2>Projects</h2>
     <div class="projects">
       <div class="card">
-        <h3>Project Samarth</h3>
-        <p>A platform developed under Build for Bharat fellowship to visualize MGNREGA data and empower citizens through data transparency.</p>
-        <a href="https://github.com/dhanyanaik9/Project_Samarth" target="_blank">🔗 View on GitHub</a>
+        <h3>KAVYAGUARD — Hate Speech Detection for Kannada Text</h3>
+        <p>
+          An AI-based system that automatically detects hate speech in Kannada text. 
+          Developed using Machine Learning and NLP techniques, KAVYAGUARD supports 
+          moderation and promotes safer online communication.
+        </p>
+        <a href="#" target="_blank">🔗 View on GitHub (Add repo link)</a>
       </div>
 
       <div class="card">
         <h3>Earthquake Visualizer</h3>
-        <p>An interactive web app that displays live earthquake data from APIs, showing magnitudes and locations on a map.</p>
+        <p>
+          An interactive web app that visualizes live earthquake data from APIs, 
+          showing magnitudes and locations on a global map.
+        </p>
         <a href="https://github.com/dhanyanaik9/Earthquake-" target="_blank">🔗 View on GitHub</a>
       </div>
     </div>
@@ -82,10 +174,12 @@
   <section>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:dhanya65373@gmail.com">dhanya65373@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/dhanyanaik9" target="_blank">github.com/dhanyanaik9</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/dhanya-m-702a27374" target="_blank">linkedin.com/in/dhanya-m-702a27374</a></p>
   </section>
 
   <footer>
-    © <span id="year"></span> Dhanya
+    © <span id="year"></span> Dhanya Mohana Naik — All Rights Reserved
   </footer>
 
   <script>
